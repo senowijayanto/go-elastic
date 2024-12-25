@@ -1,0 +1,52 @@
+# Go-related files
+/bin/
+/pkg/
+/vendor/
+*.exe
+*.log
+*.test
+*.out
+*.so
+*.dll
+
+# Go build files
+app/main
+app/*.exe
+app/*.test
+
+# Dependency files
+app/go.sum
+
+# Temporary files
+*.tmp
+*.swp
+*.DS_Store
+*.env
+
+# Logs
+*.log
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+
+# Docker-related files
+elk/logs/
+elk/tmp/
+elk/docker-compose.override.yml
+
+# Elasticsearch
+elk/elasticsearch/data/
+elk/elasticsearch/logs/
+
+# Kibana
+elk/kibana/data/
+
+# Logstash
+elk/logstash/data/
+elk/logstash/logs/
+
+# System files
+Thumbs.db
+Desktop.ini
