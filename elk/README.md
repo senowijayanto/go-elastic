@@ -18,7 +18,12 @@ The `elk` folder contains configuration files and Docker setup for running the E
    ```bash
    docker-compose up -d
    ```
-3. Access Kibana at [http://localhost:5601](http://localhost:5601).
+3. ```bash
+   docker exec -it <elasticsearch_container_name> bin/elasticsearch-setup-passwords interactive
+   ```
+   Replace <elasticsearch_container_name> with the name of your running Elasticsearch container. Use docker ps to find the container name.
+
+4. Access Kibana at [http://localhost:5601](http://localhost:5601).
 
 ## Notes
 - Ensure Docker is installed and running.

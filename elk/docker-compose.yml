@@ -52,7 +52,7 @@ services:
     container_name: postgres
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: secret
+      POSTGRES_PASSWORD: supersecret
       POSTGRES_DB: elastic_db
     volumes:
       - pg_data:/var/lib/postgresql/data
